@@ -18,7 +18,8 @@
                             <field name="slider_1_status"/>
                             <field name="slider_1_title"/>
                             <field name="slider_1_subtitle"/>
-                            <field name="slider_1_extra_text"/>    
+                            <field name="slider_1_extra_text"/>
+                            <field name="slider_1_button"/>       
                             <field name="slider_1_url"/>    
                             <field name="slider_1_banner_image" widget="image" class="oe_left oe_avatar"/>
 
@@ -28,7 +29,8 @@
                             <field name="slider_2_status"/>
                             <field name="slider_2_title"/>
                             <field name="slider_2_subtitle"/>
-                            <field name="slider_2_extra_text"/>    
+                            <field name="slider_2_extra_text"/>
+                            <field name="slider_2_button"/>       
                             <field name="slider_2_url"/>    
                             <field name="slider_2_banner_image" widget="image" class="oe_left oe_avatar"/>
 
@@ -39,6 +41,8 @@
                             <field name="central_banner_title"/>
                             <field name="central_banner_subtitle"/>
                             <field name="central_banner_desc"/>
+                            <field name="central_banner_button"/>
+                            <field name="central_banner_url"/>
                             <field name="central_banner_image" widget="image" class="oe_left oe_avatar"/>
                         </group>
                 

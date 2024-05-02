@@ -16,6 +16,7 @@ class WebsiteExtend(models.Model):
     slider_1_banner_image = fields.Binary(
         string='Imagen de Fondo (1920x800)',
     )
+    slider_1_button = fields.Char(string='Titulo Botón',)
     slider_1_url = fields.Char(string='Url',)
 
     #Slider 2 Portada
@@ -28,6 +29,7 @@ class WebsiteExtend(models.Model):
     slider_2_banner_image = fields.Binary(
         string='Imagen de Fondo (1920x800)',
     )
+    slider_2_button = fields.Char(string='Titulo Botón',)
     slider_2_url = fields.Char(string='Url',)
 
 
@@ -38,3 +40,5 @@ class WebsiteExtend(models.Model):
     central_banner_image = fields.Binary(
         string='Imagen de Banner (1800x600)',
     )
+    central_banner_button = fields.Char(string='Titulo Botón',)
+    central_banner_url = fields.Char(string='Url',)
