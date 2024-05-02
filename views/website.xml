@@ -1,0 +1,28 @@
+<odoo>
+  	<data>    
+	    <template id="header_website" inherit_id="jm_sienna.header_inherit_website">
+			<xpath expr="//ul[@id='menu_odoo_1']" position="inside">			
+				<t t-foreach="website.menu_id.child_id" t-as="submenu">
+					<t t-set="item_class" t-valuef="active"/>
+                  	<t t-set="link_class" t-valuef="nav-link"/>
+					<li t-attf-class="active">
+						<a t-att-href="submenu.clean_url()"><t t-out="submenu.name"/></a>
+					</li>
+				</t>
+			</xpath>
+		</template>
+
+
+		<template id="header_website_2" inherit_id="jm_sienna.header_inherit_website">
+			<xpath expr="//ul[@id='menu_odoo_2']" position="inside">			
+				<t t-foreach="website.menu_id.child_id" t-as="submenu">
+					<t t-set="item_class" t-valuef="active"/>
+                  	<t t-set="link_class" t-valuef="nav-link"/>
+					<li class="dropdown" t-attf-class="active">
+						<a t-att-href="submenu.clean_url()"><t t-out="submenu.name"/></a>
+					</li>
+				</t>
+			</xpath>
+		</template>
+	</data>
+</odoo>

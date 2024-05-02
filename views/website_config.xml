@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="website_form_view_inherit" model="ir.ui.view">
+        <field name="model">website</field>
+        <field name="inherit_id" ref="website.view_website_form"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//notebook/page[last()]" position="after">
+                
+                <page name="funciones_portada" string="Configurador de Portada">
+                    
+                    
+
+                    <group col="3" colspan="3">
+
+                        <group string="Slider Principal 1">
+                            <field name="slider_1_status"/>
+                            <field name="slider_1_title"/>
+                            <field name="slider_1_subtitle"/>
+                            <field name="slider_1_extra_text"/>    
+                            <field name="slider_1_url"/>    
+                            <field name="slider_1_banner_image" widget="image" class="oe_left oe_avatar"/>
+
+                        </group>
+
+                        <group string="Slider Principal 2">
+                            <field name="slider_2_status"/>
+                            <field name="slider_2_title"/>
+                            <field name="slider_2_subtitle"/>
+                            <field name="slider_2_extra_text"/>    
+                            <field name="slider_2_url"/>    
+                            <field name="slider_2_banner_image" widget="image" class="oe_left oe_avatar"/>
+
+                        </group>
+
+                        <group string="Banner Central">      
+                            
+                            <field name="central_banner_title"/>
+                            <field name="central_banner_subtitle"/>
+                            <field name="central_banner_desc"/>
+                            <field name="central_banner_image" widget="image" class="oe_left oe_avatar"/>
+                        </group>
+                
+                    
+                
+                        
+                    </group>
+                    
+                </page>
+                
+            </xpath>
+
+        </field>
+    </record>
+
+</odoo>
